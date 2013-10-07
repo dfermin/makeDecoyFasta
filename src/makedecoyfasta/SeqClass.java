@@ -209,7 +209,8 @@ public void digest(int whichSeq) {
                 break;
         }
         
-        
+       
+		seqLen = srcStr.length();
         for(int p = 0; p < seqLen; p++) {
             sb.append( srcStr.charAt(p));
             if( (p > 0) && ((p % FASTA) == 0) ) sb.append('\n');

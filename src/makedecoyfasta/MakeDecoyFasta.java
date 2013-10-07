@@ -114,13 +114,13 @@ public class MakeDecoyFasta {
         // Forward sequences
         line = ">" + curSeq.getId() + " " + curSeq.getDefline() + "\n"
              + curSeq.getFasta(0);
-        System.out.println(line);
+        System.out.print(line);
 		
 		
         // Reversed protein sequences
         line = ">rev_" + curSeq.getId() + " ## REVERSE PROTEIN OF "
              + curSeq.getId() + "\n" + curSeq.getFasta(2);
-        System.out.println(line);
+        System.out.print(line);
     }
 
     
